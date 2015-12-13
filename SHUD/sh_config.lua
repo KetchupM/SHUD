@@ -29,8 +29,8 @@ SHUD.Config.Icon.Paper          = "page"                -- Silkicon for the pape
 SHUD.Config.Icon.Warning        = "stop"                -- Silkicon for the warning sign
 
 // Configs for other Addons and Modules
-SHUD.Config.Addon.Showgang      = false                 -- Show gang name (DarkRP Gang System) (Not 100% sure if its working)
-SHUD.Config.Addon.GangSize      = "medium"              -- Text size (small/medium/large)
+SHUD.Config.Addon.Showtitle     = false                 -- Show gang name (DarkRP Gang System) (Not 100% sure if its working)
+SHUD.Config.Addon.TitleSize      = "medium"              -- Text size (small/medium/large)
 SHUD.Config.Addon.Showorg       = false                 -- Show org name (Organisations Addon for DarkRP)
 SHUD.Config.Addon.OrgSize       = "medium"              -- Text size (small/medium/large)
 
@@ -47,8 +47,8 @@ SHUD.Config.Color.Jobbg         = Color(255,255,255)
 SHUD.Config.Color.Ranktext      = Color(255,255,255,180)
 SHUD.Config.Color.Rankbg        = Color(0,0,0,180)
 
-SHUD.Config.Addon.Gangcolor     = Color(0,0,0,180)
-SHUD.Config.Addon.Gangtext      = Color(255,255,255,255)
+SHUD.Config.Addon.Titlecolor     = Color(0,0,0,180)
+SHUD.Config.Addon.Titletext      = Color(255,255,255,255)
 SHUD.Config.Addon.Orgcolor      = Color(10,10,10,180)
 SHUD.Config.Addon.Orgtext       = Color(255,255,255,255)
 
