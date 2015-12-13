@@ -151,23 +151,21 @@ function DrawSHUD(ply)
 		ddt(ply:getDarkRPVar("job") or "", "SHUDName", x + w / 2, y + 34, SHUD.Config.Color.Jobtext, TEXT_ALIGN_CENTER)
     end
 
-	if (SHUD.Config.Addon.GangSize == "small") then
+	if (SHUD.Config.Addon.TitleSize == "small") then
 		updown = 27
-	elseif (SHUD.Config.Addon.GangSize == "medium") then
+	elseif (SHUD.Config.Addon.TitleSize == "medium") then
 		updown = 28
-	elseif (SHUD.Config.Addon.GangSize == "big") then
+	elseif (SHUD.Config.Addon.TitleSize == "big") then
 		updown = 30
 	else
 		updown = 26
 	end
 
 	--[[                                                                  ]]--
-	if ply:GetNWString("Gang","") != "" and SHUD.Config.Addon.Showgang then
-	    local gang = ply:GetNWString("Gang","") or "No Gang"
-        drb(round, x, y - 28, w, 25, SHUD.Config.Addon.Gangcolor)
-        ddt(gang, "SHUDORG", x + w / 2, y - updown, SHUD.Config.Addon.Gangtext, TEXT_ALIGN_CENTER)
-    elseif (ply:GetNWBool("Org_Leader",true) == true) then
-        drb(round, x, y - 28, w, 25, Color(10, 10, 10, 0))
+	if ply:GetNWString("_title") != "" and SHUD.Config.Addon.Showtitle then
+	    local title = ply:GetNWString("title","")
+        drb(round, x, y - 28, w, 25, SHUD.Config.Addon.Titlecolor)
+        ddt(title, "SHUDORG", x + w / 2, y - updown, SHUD.Config.Addon.Titletext, TEXT_ALIGN_CENTER)
 	end
 	--[[                                                                  ]]--
 
